@@ -10,9 +10,9 @@ public class LibroView {
 		//ILibroDAO db = new PesonImplMySQL();
 		
 		System.out.println("** CREATE **");
-		System.out.println(l.addLibro(new Libro(1, "Alex", "Soria")));
-		System.out.println(l.addLibro(new Libro(2, "Manuel", "Parrales")));
-		System.out.println(l.addLibro(new Libro(3, "Sandra", "Torres")));
+		System.out.println(l.addLibro(new Libro(1, "MATEMATICA 1", "MATEMATICA")));
+		System.out.println(l.addLibro(new Libro(2, "PROGRAMACION EN JAVA", "INFORMATICA")));
+		System.out.println(l.addLibro(new Libro(3, "CIENCIAS DE LA VIDA", "CIENCIAS NATURALES")));
 		
 		System.out.println("\n** READ ALL **");
 		for (Libro libro : l.findAllLibro()) {
@@ -23,7 +23,7 @@ public class LibroView {
 		System.out.println(l.findLibroByCodigo(3));
 		
 		System.out.println("\n** UPDATE PERSON BY ID 3 **");
-		System.out.println(l.updateLibro(new Libro(3, "Maria", "Hallo"), 3));
+		System.out.println(l.updateLibro(new Libro(3, "HISTORIA DE LOS ANIMALES", "CIENICAS NATURALES"), 3));
 		System.out.println("=> READ PERSON BY ID 3");
 		System.out.println(l.findLibroByCodigo(3));
 

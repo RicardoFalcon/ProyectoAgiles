@@ -6,7 +6,7 @@ public class Libro {
 	private String categoria;
 
 	public Libro(int codigo, String name, String categoria) {
-		super();
+		
 		this.codigo = codigo;
 		this.name = name;
 		this.categoria = categoria;
@@ -34,6 +34,11 @@ public class Libro {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	@Override
+	public String toString() {
+		return "[" + this.codigo + "] " + this.name + " " + this.categoria;
 	}
 
 

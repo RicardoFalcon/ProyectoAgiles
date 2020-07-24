@@ -1,4 +1,4 @@
-package ec.edu.epn.git;
+package ec.edu.epn.model;
 
 public class Libro {
 	private int codigo;
